@@ -40,23 +40,23 @@ The [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQ
    
 2.Run the notebook or Python script to:
 
- Load the SQuAD v1.1 dataset
-
- Load the BERT QA model and tokenizer
-
- Tokenize context and question
-
- Predict the answer span
-
- Evaluate using EM and F1
+      Load the SQuAD v1.1 dataset
+      
+      Load the BERT QA model and tokenizer
+      
+      Tokenize context and question
+      
+      Predict the answer span
+      
+      Evaluate using EM and F1
 
 3.Model Used:
 
-  from transformers import BertTokenizer, BertForQuestionAnswering
-  
-  tokenizer = BertTokenizer.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")
-  
-  model = BertForQuestionAnswering.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")
+     from transformers import BertTokenizer, BertForQuestionAnswering
+     
+     tokenizer = BertTokenizer.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")
+     
+     model = BertForQuestionAnswering.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")
 
 ✅ Evaluation Metrics
 
