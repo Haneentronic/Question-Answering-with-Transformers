@@ -40,20 +40,22 @@ The [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQ
    
 2.Run the notebook or Python script to:
 
-    Load the SQuAD v1.1 dataset
+ Load the SQuAD v1.1 dataset
 
-    Load the BERT QA model and tokenizer
+ Load the BERT QA model and tokenizer
 
-    Tokenize context and question
+ Tokenize context and question
 
-    Predict the answer span
+ Predict the answer span
 
-    Evaluate using EM and F1
+ Evaluate using EM and F1
 
 3.Model Used:
 
   from transformers import BertTokenizer, BertForQuestionAnswering
+  
   tokenizer = BertTokenizer.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")
+  
   model = BertForQuestionAnswering.from_pretrained("bert-large-uncased-whole-word-masking-finetuned-squad")
 
 ✅ Evaluation Metrics
@@ -63,23 +65,34 @@ The [Stanford Question Answering Dataset (SQuAD)](https://rajpurkar.github.io/SQ
     F1 Score: Measures overlap between predicted and true answer tokens.
 
 📊 Example
+
     Context:
+    
        "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France." 
+       
     Question:
+    
        Where is the Eiffel Tower located?
+       
     Predicted Answer:
+    
        Paris, France
        
 📦 Project Structure
+
      📂 question-answering-transformers
       ├── README.md
       ├── requirements.txt
       └── qa_with_bert.ipynb
       
 🙋‍♀️ Author
+
   Hanen Ebrahim
+  
   Intern @ Elevvo NLP Internship Program
   
 🌐 References
+
     Hugging Face Transformers
+    
     SQuAD Dataset
